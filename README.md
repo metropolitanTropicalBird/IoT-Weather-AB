@@ -15,6 +15,25 @@
 - [ ] set routes
 - [ ] create frontend views
 
+
+### Initializing a Node.js Environment
+
+1. Ensure that Node.js and NPM are installed on your system:
+    > node --version
+
+    > npm --version
+
+2. In terminal, inside the project directory:
+    > npm init -y
+
+3. This will add a package.json file
+
+4. Install dependencies
+    > npm install express ejs express-ejs-layouts
+
+5. Install development dependencies
+    > npm install --save-dev dotenv nodemon
+
 ### Worklog and Commits
 
 Date | Commit Message | Version
@@ -25,3 +44,4 @@ Date | Commit Message | Version
 
 - [Web Page Layouts](https://www.youtube.com/watch?v=3C_22eBWpjg)
 - [JS Native Fetch](https://www.youtube.com/watch?v=MBqS1kYzwTc)
+
