@@ -1,0 +1,17 @@
+{
+  "name": "iot-weather",
+  "version": "1.0.0",
+  "description": "![Yellow-Umbrella](public/assets/yellow-umbrella.jpg)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "MXZ",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1"
+  }
+}
