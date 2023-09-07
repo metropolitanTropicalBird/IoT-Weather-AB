@@ -54,7 +54,7 @@ void setup(void)
     
   // Give name and ID to device
   rest.set_id("xxx");
-  rest.set_name("alpha200");
+  rest.set_name("alpha-xxx");
   
   // Connect to WiFi
   WiFi.begin(ssid, password);
