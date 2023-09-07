@@ -1,6 +1,6 @@
-// if (process.env.NODE_ENV !== 'production') {
-//     require('dotenv').config()
-// }
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config()
+}
 
 const port = 6900
 const express = require('express')
@@ -17,20 +17,11 @@ app.use(express.static('public'))
 app.use(express.json({ limit: '1mb' }))
 
 // Routes
+const indexRouter = require('./routes/index')
 
-// Basic route
-app.get('/', (req, res) => {
-    res.send('Hello World')
+app.use('/', indexRouter)
+
+app.listen(process.env.PORT || port, () => {
+    console.log('Web App ready at http://localhost:' + port)
 })
 
-// const indexRouter = require('./routes/index')
-
-// app.use('/', indexRouter)
-
-// app.listen(process.env.PORT || port, () => {
-//     console.log('Web App ready at http://localhost:' + port)
-// })
-
-app.listen(port, () => {
-    console.log(`Server listening on port ${port}`)
-})

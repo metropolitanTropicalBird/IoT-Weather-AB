@@ -9,11 +9,11 @@
 - [x] Setup repos - GitHub
 - [x] setup ESP32 - Arduino IDE
 - [x] Install dependencies - aREST.h and DHT.h
-- [ ] Test ESP32 - get json data via wifi
-- [ ] Initialize Node.js environment
-- [ ] setup server.js with express
-- [ ] set routes
-- [ ] create frontend views
+- [x] Test ESP32 - get json data via wifi
+- [x] Initialize Node.js environment
+- [x] setup server.js with express
+- [ ] set index route and views
+- [ ] link ESP32 to Node app with fetch
 
 
 ### Initializing a Node.js Environment
