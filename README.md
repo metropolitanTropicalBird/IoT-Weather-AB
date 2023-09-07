@@ -2,7 +2,7 @@
 
 ## an IoT project
 
-![Yellow-Umbrella](public/assets/yellow-umbrella.jpg)
+![Yellow-Umbrella](public/assets/yellow-umbrella.png)
 
 ### Development Roadmap
 
@@ -14,7 +14,6 @@
 - [x] setup server.js with express
 - [ ] set index route and views
 - [ ] link ESP32 to Node app with fetch
-
 
 ### Initializing a Node.js Environment
 
