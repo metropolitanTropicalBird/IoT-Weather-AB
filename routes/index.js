@@ -15,7 +15,7 @@ router.get('/', async(req, res) => {
 
 async function getApiData() {
     try { 
-        const res = await fetch('http://192.168.1.202')
+        const res = await fetch('http://192.168.1.xxx')
 
         if (!res.ok) {
             throw new Error('Failed to fetch data')
@@ -29,7 +29,7 @@ async function getApiData() {
             id: txt.id,
             hardware: txt.hardware,
             temperature : txt.variables.temperature,
-            //humidity : txt.variables.humidity,
+            humidity : txt.variables.humidity,
         }
 
         console.log(txt)

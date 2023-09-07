@@ -1,8 +1,8 @@
 
     <nav>
       <p>Categories</p>
-      <li>Weather</li>
-      <li>Data</li>
+      <li><a href="https://weather.com/en-AU/weather/today/l/ASXX0023:1:AS?Goto=Redirected">Weather</a></li>
+      <li><a href="#">Data</a></li>
     </nav>
     <article>
       <h2>The Best IoT Weather App</h2>
@@ -14,16 +14,22 @@
           <p><strong>Weather Now</strong></p>
         </li>
         <li>
+          <!-- <p>Time: <span id="time2"><%= obj.updateTime %></span><br /></p> -->
+          <p>Temperature: <%= obj.temperature %>&deg;<br /></p>
+          <p>Humidity: <%= obj.humidity %>&percnt;<br /></p>
+        </li>
+        <li>
+          <p><strong>Sensor Info:</strong></p>
+        </li>
+        <li>
           <p>Sensor: <%= obj.sensName %> <br /></p>
           <p>Id: <%= obj.id %> <br /></p> 
           <p>Hardware: <%= obj.hardware %> <br /></p> 
           <p>Location: <%= obj.location %><br /></p>
-          <!-- <p>Time: <span id="time2"><%= obj.updateTime %></span><br /></p> -->
-          <p>Temperature: <%= obj.temperature %></span>&deg;<br /></p>
         </li>
         <li>
           <p><strong>Writted by:</strong></p>
-          <p>Mario</p>
+          <p>Storm Rhyma</p>
         </li>
       </ul>
     </aside>
