@@ -2,7 +2,7 @@
 *  Weather Station App
 *  CGS Semester 2
 *  Task 2
-*  Author: your name here
+*  Author: Annaliese
 */
 
 #include <math.h>
@@ -21,8 +21,8 @@ aREST rest = aREST();
 DHT dht(DHTPIN, DHTTYPE, 15);
 
 // WiFi parameters
-const char* ssid = "Proxima";
-const char* password = "centauri";
+const char* ssid = "bennettNetwork";
+const char* password = "b3nn3tt-n3tw0rk";
 //Static IP address configuration
 // P connections 
 #define LISTEN_PORT           80
@@ -33,7 +33,7 @@ WiFiServer server(LISTEN_PORT);
 // Variables to be exposed to the API
 float temperature;
 float humidity;
-char* location = "Al Fresco";
+char* location = "not australia";
 int timer = 72000;
 
 // Declare functions to be exposed to the API
@@ -101,7 +101,7 @@ void loop() {
   //Check running time and reset if expired
   if (timer == 0 ) {
     delay(3000);
-    Serial.println("Resetting..");
+    Serial.println("Resetting...");
     ESP.restart();
   }
   
